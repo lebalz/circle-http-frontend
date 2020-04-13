@@ -8,6 +8,11 @@ This should be used in combination with the [circle-server](https://github.com/l
 
 Instead of using a polling pattern with http requests there is a more suitable version with socket communication. Check out [here: circle-socketio-frontend](https://github.com/lebalz/circle-socketio-frontend). 
 
+
+![demo](docs/circles-http.gif)
+
+Remark that the client has to be refreshed (or add a circle itself) to get the updates from the other server.
+
 ## install
 
 ```sh
@@ -23,4 +28,6 @@ yarn start
 
 1. Make sure to first start a [Circle-Server Sandbox](https://codesandbox.io/s/github/lebalz/circle-server).
 
-2. Copy the URL of the *Circle-Server Sandbox* instance. You then have to replace the `CIRCLE_SERVER_URL` in `App.js`.
+2. Copy the URL of the *Circle-Server Sandburl shall not have a trailing slash `/`!
+
+![config](docs/circle-frontend-config.gif)
