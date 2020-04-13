@@ -4,7 +4,7 @@ import axios from "axios";
 import CircleForm from "./components/CircleForm";
 import Circle from "./components/Circle";
 
-export const CIRCLE_SERVER_URL = "localhost:4001";
+export const CIRCLE_SERVER_URL = `http://localhost:4001`;
 
 export default class App extends React.Component {
   state = {
@@ -36,8 +36,8 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <div id="dashboard">
-          {this.state.circles.map((circel, index) => (
-            <Circle key={index} circle={circel} />
+          {this.state.circles.map((circle, index) => (
+            <Circle key={index} circle={circle} />
           ))}
         </div>
         <CircleForm addCircle={this.addCircle} />
