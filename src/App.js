@@ -4,7 +4,7 @@ import axios from "axios";
 import CircleForm from "./components/CircleForm";
 import Circle from "./components/Circle";
 
-export const API_URL = "localhost:4001";
+export const CIRCLE_SERVER_URL = "localhost:4001";
 
 export default class App extends React.Component {
   state = {
@@ -16,14 +16,14 @@ export default class App extends React.Component {
   }
 
   addCircle = circle => {
-    axios.post(`${API_URL}/circles`, circle).then(() => {
+    axios.post(`${CIRCLE_SERVER_URL}/circles`, circle).then(() => {
       this.loadCircles();
     });
   };
 
   loadCircles() {
     axios
-      .get(`${API_URL}/circles`)
+      .get(`${CIRCLE_SERVER_URL}/circles`)
       .then(({ data }) => {
         this.setState({ circles: data });
       })
