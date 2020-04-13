@@ -7,9 +7,14 @@ const BASE_GRID_TRACK_SIZE = 10;
 export default class PreviewCircle extends React.Component {
   render() {
     const circle = this.props.circle;
+    let classes = "circle preview-circle";
+
+    if (this.props.circle.animated) {
+      classes = `${classes} animated`;
+    }
     return (
       <div
-        className="circle"
+        className={classes}
         style={{
           background: circle.color,
           width: `${circle.size * BASE_GRID_TRACK_SIZE}px`,
