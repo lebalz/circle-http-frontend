@@ -2,7 +2,7 @@
 
 A javascript react project using http requests for fetching data. 
 
-Check it out on [CodeSandbox](https://codesandbox.io/s/github/lebalz/circle-http-frontend)
+[![Check it out on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/lebalz/circle-http-frontend)
 
 This should be used in combination with the [circle-server](https://github.com/lebalz/circle-server).
 
@@ -26,8 +26,12 @@ yarn start
 
 ## Codesandbox
 
-1. Make sure to first start a [Circle-Server Sandbox](https://codesandbox.io/s/github/lebalz/circle-server).
+1. Make sure to first start a [Circle-Server Sandbox](https://codesandbox.io/s/github/lebalz/circle-server):
+  
+    [![Check it out on Code Sandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/lebalz/circle-server)
 
-2. Copy the URL of the *Circle-Server Sandburl shall not have a trailing slash `/`!
+2. Copy the URL of the *Circle-Server Sandbox* instance. You then have to replace the `CIRCLE_SERVER_URL` in `App.js`.
 
-![config](docs/circle-frontend-config.gif)
+    !! The URL shall not have a trailing slash `/`
+
+    ![config](docs/circle-frontend-config.gif)
